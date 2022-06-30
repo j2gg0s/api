@@ -104,6 +104,10 @@
             "description": "Format for the proxy access log Empty value results in proxy's default access log format",
             "type": "string"
           },
+          "accessLogOmitEmptyValues": {
+            "description": "If set, omity empty in proxy's access logging. For text format, the empty is change from - to an empty string. For json format, the keys with null values are omitted.",
+            "type": "boolean"
+          },
           "accessLogEncoding": {
             "$ref": "#/components/schemas/istio.mesh.v1alpha1.MeshConfig.AccessLogEncoding"
           },

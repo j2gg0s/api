@@ -177,6 +177,19 @@ Empty value results in proxy&rsquo;s default access log format</p>
 No
 </td>
 </tr>
+<tr id="MeshConfig-access_log_omit_empty_values">
+<td><code>accessLogOmitEmptyValues</code></td>
+<td><code>bool</code></td>
+<td>
+<p>If set, omity empty in proxy&rsquo;s access logging.
+For text format, the empty is change from - to an empty string.
+For json format, the keys with null values are omitted.</p>
+
+</td>
+<td>
+No
+</td>
+</tr>
 <tr id="MeshConfig-access_log_encoding">
 <td><code>accessLogEncoding</code></td>
 <td><code><a href="#MeshConfig-AccessLogEncoding">AccessLogEncoding</a></code></td>

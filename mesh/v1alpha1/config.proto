@@ -121,6 +121,11 @@ message MeshConfig {
   // Empty value results in proxy's default access log format
   string access_log_format = 24;
 
+  // If set, omity empty in proxy's access logging.
+  // For text format, the empty is change from - to an empty string.
+  // For json format, the keys with null values are omitted.
+  bool access_log_omit_empty_values = 64;
+
   enum AccessLogEncoding {
     // text encoding for the proxy access log
     TEXT = 0;

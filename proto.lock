@@ -35335,6 +35335,11 @@
                         "id": 2,
                         "name": "log_format",
                         "type": "LogFormat"
+                      },
+                      {
+                        "id": 3,
+                        "name": "omit_empty_values",
+                        "type": "bool"
                       }
                     ],
                     "messages": [
@@ -36626,13 +36631,7 @@
                   {
                     "id": 1,
                     "name": "protocol",
-                    "type": "string",
-                    "options": [
-                      {
-                        "name": "(google.api.field_behavior)",
-                        "value": "REQUIRED"
-                      }
-                    ]
+                    "type": "string"
                   },
                   {
                     "id": 2,
@@ -39453,13 +39452,7 @@
                   {
                     "id": 1,
                     "name": "protocol",
-                    "type": "string",
-                    "options": [
-                      {
-                        "name": "(google.api.field_behavior)",
-                        "value": "REQUIRED"
-                      }
-                    ]
+                    "type": "string"
                   },
                   {
                     "id": 2,
